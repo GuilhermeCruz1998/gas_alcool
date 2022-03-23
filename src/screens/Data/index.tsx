@@ -66,17 +66,17 @@ export default function Home() {
                 }}
                 render={({ field: { onChange, onBlur, value } }) => (
                   <MaskedTextInput
-                    mask={"9.99"}
+                    mask={"99.99"}
                     style={styles.input}
                     onBlur={onBlur}
                     keyboardType="numeric"
                     onChangeText={onChange}
-                    value={value}
+                    value={String(value)}
                   />
                 )}
-                name="weight"
+                name="gas"
               />
-              {errors.weight && (
+              {errors.gas && (
                 <Text style={styles.error}>Campo obrigatório</Text>
               )}
             </Input>
@@ -89,17 +89,17 @@ export default function Home() {
                 }}
                 render={({ field: { onChange, onBlur, value } }) => (
                   <MaskedTextInput
-                    mask={"9.99"}
+                    mask={"99.99"}
                     style={styles.input}
                     onBlur={onBlur}
                     keyboardType="numeric"
                     onChangeText={onChange}
-                    value={value}
+                    value={String(value)}
                   />
                 )}
-                name="age"
+                name="alcool"
               />
-              {errors.age && (
+              {errors.alcool && (
                 <Text style={styles.error}>Campo obrigatório</Text>
               )}
             </Input>

@@ -14,9 +14,8 @@ export interface GenderInterface {
 }
 
 export type FormData = {
-  weight: string;
-  height: string;
-  age: string;
+  gas: number;
+  alcool: number;
 };
 
 export interface InputInterface {

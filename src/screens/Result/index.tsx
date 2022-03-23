@@ -14,7 +14,7 @@ export default function Result() {
 
   useEffect(() => {
     if (formData) {
-      const imc = getPrice(Number(formData.weight), Number(formData.height));
+      const imc = getPrice(Number(formData.gas), Number(formData.alcool));
       
       setResultValue(imc);
     }
